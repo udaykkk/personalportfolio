@@ -1,10 +1,35 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Routes, Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router";
 import './index.css'
 import App from './App.jsx'
 
+import Landing from './pages/Landing/Landing.jsx' 
+import Developer from './pages/Developer/Developer.jsx';
+import Recuiter from './pages/Recruiter/Recruiter.jsx'
+import Stalker from './pages/Stalker/Stalker.jsx';
+import Adventurer from './pages/Adventurer/Adventurer.jsx'
+
+
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+    <Route path='/' element={<Landing />} />
+    <Route path='/developer' element={<Developer />} />
+    <Route path='/recruiter' element={<Recuiter />} />
+    <Route path='/adventurer' element={<Adventurer />} />
+    <Route path='/stalker' element={<Stalker />} />
+
+    </>
+
+
+  )
+)
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </StrictMode>,
 )
