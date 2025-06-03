@@ -18,7 +18,7 @@ function HeroSection({ video, className, content, title }) {
         <div className="flex flex-row gap-5">
           <div>
             <button
-              className="flex items-center gap-2 text-black font-bold bg-white pt-3 pb-3 pr-8 pl-8 rounded-xl m-0 "
+              className="flex items-center gap-2 text-black font-bold bg-white pt-3 pb-3 pr-8 pl-8 rounded-xl m-0 cursor-pointer"
               style={{
                 background: "rgba(255,255,255, 0.8)",
               }}
@@ -27,15 +27,17 @@ function HeroSection({ video, className, content, title }) {
             </button>
           </div>
           <div>
+            <a href="https://www.linkedin.com/in/anurag-banerjee007/" target="_blank">
             <button
-              className=" flex items-center gap-2 text-black font-bold pt-3 pb-3 pr-8 pl-8 rounded-xl m-0 "
+              className=" flex items-center gap-2 text-black font-bold pt-3 pb-3 pr-8 pl-8 rounded-xl m-0 cursor-pointer"
               style={{
-                background: "rgba(63,63,70, 0.7)",
+                background: "rgba(63,63,70, 0.6)",
               }}
             >
               <span className="text-white text-xl">ⓘ</span>
               <span className="text-white text-xl">Linkedin</span>
             </button>
+            </a>
           </div>
         </div>
       </div>
