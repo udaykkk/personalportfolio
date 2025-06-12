@@ -8,7 +8,7 @@ return (
             <div className="flex justify-start items-center gap-4">
                 <Link to="/" className="flex items-center">
                     <img
-                        src="src/assets/ANURAG-BANERJEE-3-6-2025.png"
+                        src="https://fontmeme.com/permalink/250612/ff86bbbd1c9d55ff9b322e3672f5f5f4.png"
                         alt="Logo"
                         className="h-10 w-auto"
                     />
