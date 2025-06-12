@@ -10,6 +10,7 @@ import Recuiter from './pages/Recruiter/Recruiter.jsx'
 import Stalker from './pages/Stalker/Stalker.jsx';
 import Adventurer from './pages/Adventurer/Adventurer.jsx'
 import HireMe from './pages/HireMe/HireMe.jsx';
+import Skills from './pages/Skills/Skills.jsx';
 
 
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
     <Route path='/adventurer' element={<Adventurer />} />
     <Route path='/stalker' element={<Stalker />} />
     <Route path='/Hire' element={<HireMe />} />
+    <Route path='/Skills' element={<Skills />} />
 
     </>
 
