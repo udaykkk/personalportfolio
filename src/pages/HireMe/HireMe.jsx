@@ -19,7 +19,7 @@ function HireMe() {
           className="h-10 w-auto"
         />
         <p className="text-white font-[Bebas_Neue] text-3xl">
-          FULL STACK DEVELOPER | ASPIRING DEVELOPER
+          Full Stack Developer | Bridging Design & Logic
         </p>
         <p className="text-white font-[Bebas_Neue] font-[100] text-lg">
           {" "}
