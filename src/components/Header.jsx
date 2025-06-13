@@ -20,16 +20,16 @@ function Header({ avatar = "src/assets/Recruiter.png" }) {
         ? 'bg-[#141414]' 
         : 'bg-gradient-to-b from-black from-0% via-black/60 via-40% to-transparent to-40%'
     }`}>
-      <div className="m-4 flex items-center gap-4 font-normal text-xl justify-between h-12">
+      <div className="m-4 flex items-center gap-4 font-normal text-base justify-between h-12">
         <div className="flex justify-start items-center gap-4">
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity duration-200">
             <img
               src="src/assets/ANURAG-BANERJEE-3-6-2025.png"
               alt="Logo"
-              className="h-10 w-auto"
+              className="h-8 w-auto"
             />
           </Link>
-          <div className="text-white list-none flex flex-row gap-4">
+          <div className="text-#FFFFFF list-none flex flex-row gap-4">
             <Link to="/" className="hover:text-red-500 transition-colors duration-200">
               <div> Home </div>
             </Link>
