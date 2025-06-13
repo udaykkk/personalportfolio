@@ -11,6 +11,7 @@ import Stalker from './pages/Stalker/Stalker.jsx';
 import Adventurer from './pages/Adventurer/Adventurer.jsx'
 import HireMe from './pages/HireMe/HireMe.jsx';
 import Skills from './pages/Skills/Skills.jsx';
+import Project from './pages/Project/Project.jsx';
 
 
 
@@ -25,6 +26,8 @@ const router = createBrowserRouter(
     <Route path='/stalker' element={<Stalker />} />
     <Route path='/Hire' element={<HireMe />} />
     <Route path='/Skills' element={<Skills />} />
+    <Route path='/Project' element={<Project />} />
+
 
     </>
 
