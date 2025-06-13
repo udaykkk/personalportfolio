@@ -33,7 +33,7 @@ function Project() {
         <ProjectCard
         link={"https://weather-app-frontend-i64p.onrender.com/"}
           image={"https://i.ibb.co/zHbxvmBt/image.png"}
-          title={"Weather Pro"}
+          title={"Weather-Pro"}
           description={
             "WeatherPro delivers accurate weather predictions and forecasts for any location worldwide. Built with React and powered by reliable weather APIs, this application offers an intuitive, responsive interface for accessing detailed weather information, news updates, and interactive features"
           }
