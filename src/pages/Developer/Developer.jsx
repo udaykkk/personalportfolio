@@ -4,19 +4,22 @@ import Header from "../../components/Header";
 import CardRow from "../../components/CardRow";
 
 function Recruiter() {
-  const images = [
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400"
-  ];
+  const cardData = {
+    images: [
+      "https://i.ibb.co/6RswpdgW/project.jpg",
+      "https://i.ibb.co/d4R5TvD3/dave-michael-ied-YX4wsxw-I-unsplash.jpg",
+      "https://placehold.co/600x400",
+      "https://placehold.co/600x400",
+      "https://placehold.co/600x400",
+      "https://placehold.co/600x400",
+    ],
+    cardName: ["Projects", "Skills"],
+  };
 
   return (
     <>
       <div className="bg-[#141414] w-full min-h-screen">
-        <Header avatar={"src/assets/Recruiter.png"}/>
+        <Header avatar={"src/assets/Recruiter.png"} />
         <div>
           <HeroSection
             className={"h-[75vh] items-center bg-center"}
@@ -30,13 +33,15 @@ function Recruiter() {
           />
         </div>
         <div className="pb-2">
-          <CardRow 
-            title="Today's Top Picks for recruiter" 
-            images={images}
+          <CardRow
+            title="Today's Top Picks for recruiter"
+            images={cardData.images}
+            CardName={cardData.cardName}
           />
-          <CardRow 
+          <CardRow
             title={"Continue Watching for recruiter"}
-            images={images}
+            images={cardData.images}
+            CardName={cardData.cardName}
           />
         </div>
       </div>
