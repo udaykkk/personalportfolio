@@ -33,10 +33,12 @@ function Recruiter() {
           <CardRow 
             title="Today's Top Picks for recruiter" 
             images={images}
+            CardName={"Hello"}
           />
           <CardRow 
             title={"Continue Watching for recruiter"}
             images={images}
+            CardName={"Hello"}
           />
         </div>
       </div>

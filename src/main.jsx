@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router";
 import './index.css'
 import App from './App.jsx'
+import { TerminalContextProvider } from "react-terminal";
+
 
 import Landing from './pages/Landing/Landing.jsx' 
 import Developer from './pages/Developer/Developer.jsx';
@@ -37,7 +39,7 @@ const router = createBrowserRouter(
 )
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <TerminalContextProvider>
     <RouterProvider router={router}/>
-  </StrictMode>,
+  </TerminalContextProvider>,
 )

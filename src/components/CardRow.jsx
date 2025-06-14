@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
+import { Link } from "react-router";
 
-function CardRow({ title, images, CardName }) {
+function CardRow({ title, images, CardName, links }) {
   const scrollContainerRef = useRef(null);
 
   const scrollLeft = () => {
@@ -26,25 +27,46 @@ function CardRow({ title, images, CardName }) {
           className="flex mt-6 overflow-x-auto scrollbar-hide pb-4"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className={`relative ${
-                index === 0 ? "ml-8" : "ml-4"
-              } flex-shrink-0 overflow-hidden rounded-md`}
-            >
-              <img
-                className="max-w-72 max-h-auto transition-all duration-300 hover:scale-110 hover:shadow-[8px_8px_10px_rgba(239,68,68,0.8)]"
-                src={image}
-                alt="placeholder"
-              />
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <p className="text-white text-xl font-bold text-center rounded">
-                  {CardName[index]}
-                </p>
+          {images.map((image, index) => {
+            const CardContent = (
+              <div
+                className={`relative ${
+                  index === 0 ? "ml-8" : "ml-4"
+                } flex-shrink-0 overflow-hidden rounded-md cursor-pointer`}
+              >
+                <img
+                  className="max-w-72 max-h-auto transition-all duration-300 hover:scale-110 hover:shadow-[8px_8px_10px_rgba(239,68,68,0.8)]"
+                  src={image}
+                  alt="placeholder"
+                />
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <p className="text-white text-xl font-bold text-center rounded">
+                    {CardName[index]}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+
+            return (
+              <div key={index}>
+                {links && links[index] ? (
+                  links[index].startsWith("http") ? (
+                    <a
+                      href={links[index]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {CardContent}
+                    </a>
+                  ) : (
+                    <Link to={links[index]}>{CardContent}</Link>
+                  )
+                ) : (
+                  CardContent
+                )}
+              </div>
+            );
+          })}
         </div>
         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -mt-2">
           <button

@@ -2,19 +2,30 @@ import React from "react";
 import HeroSection from "../../components/HeroSection";
 import Header from "../../components/Header";
 import CardRow from "../../components/CardRow";
+import { ReactTerminal } from "react-terminal";
 
 function Recruiter() {
   const cardData = {
     images: [
       "https://i.ibb.co/6RswpdgW/project.jpg",
       "https://i.ibb.co/d4R5TvD3/dave-michael-ied-YX4wsxw-I-unsplash.jpg",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400",
-      "https://placehold.co/600x400",
+      "https://i.ibb.co/yBX4v91v/image.png",
+      "https://i.ibb.co/nqGKFBj2/image.png",
+      "https://i.ibb.co/3yG8fQbX/terminal.jpg",
       "https://placehold.co/600x400",
     ],
-    cardName: ["Projects", "Skills"],
+    cardName: ["Projects", "Skills", "Contact Me", "Experience", "Fun Terminal"],
+    links: [
+    "/Project",           
+    "/skills",            
+    "/Hire", 
+    "/professional",        
+    "/developer",         
+    "https://github.com/username", 
+  ]
   };
+
+  
 
   return (
     <>
@@ -37,11 +48,13 @@ function Recruiter() {
             title="Today's Top Picks for recruiter"
             images={cardData.images}
             CardName={cardData.cardName}
+            links={cardData.links}
           />
           <CardRow
             title={"Continue Watching for recruiter"}
             images={cardData.images}
             CardName={cardData.cardName}
+            links={cardData.links}
           />
         </div>
       </div>
