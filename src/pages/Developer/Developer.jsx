@@ -20,12 +20,11 @@ function Recruiter() {
     "/skills",            
     "/Hire", 
     "/professional",        
-    "/developer",         
+    "/Terminal",         
     "https://github.com/username", 
   ]
   };
 
-  
 
   return (
     <>
@@ -57,6 +56,7 @@ function Recruiter() {
             links={cardData.links}
           />
         </div>
+          
       </div>
     </>
   );
