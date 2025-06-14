@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/Header";
 import ProjectCard from "../../components/ProjectCard";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNode, FaPython } from "react-icons/fa";
+import { AiOutlineOpenAI } from "react-icons/ai";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 function Project() {
@@ -24,6 +25,11 @@ function Project() {
       { icon: <FaHtml5 />, name: "HTML" },
       { icon: <FaCss3Alt />, name: "CSS" },
       {icon : <FaJs />, name : "Javascript"}
+    ],
+    iconsEdu: [
+      { icon: <FaPython />, name: "Python" },
+      { icon: <FaNode/>, name: "Node.js" },
+      {icon : <AiOutlineOpenAI  />, name : "OpenAI"}
     ],
   };
   return (
@@ -73,7 +79,7 @@ function Project() {
           description={
             "EduVision is an AI-based tool that helps teachers track student engagement and improve classroom interaction using smart insights from images and data.It empowers educators with real-time feedback to make learning more effective and interactive."
           }
-          icons={projectData.iconsEtch}
+          icons={projectData.iconsEdu}
         />
         <ProjectCard
         link={"https://shadowguy01234.github.io/JS-Calculator/"}
