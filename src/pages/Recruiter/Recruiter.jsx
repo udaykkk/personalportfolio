@@ -4,19 +4,38 @@ import Header from "../../components/Header";
 import CardRow from "../../components/CardRow";
 
 function Recruiter() {
-  const images = [
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400"
-  ];
+  const cardData = {
+    images: [
+      "https://i.ibb.co/d4R5TvD3/dave-michael-ied-YX4wsxw-I-unsplash.jpg",
+      "https://i.ibb.co/6RswpdgW/project.jpg",
+      "https://i.ibb.co/nqGKFBj2/image.png",
+      "https://i.ibb.co/yBX4v91v/image.png",
+      "https://i.ibb.co/Xk7q6ntP/github-mark.png",
+    ],
+    cardName: ["Skills", "Projects", "Experience", "Contact Me", "Github"],
+    links: [
+      "/skills",
+      "/Project",
+      "/professional",
+      "/Hire",
+      "https://github.com/shadowguy01234",
+    ],
+  };
+
+  const continueWatchingData = {
+    images: [
+      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
+      "https://i.ibb.co/yBX4v91v/image.png",
+      "https://i.ibb.co/3yG8fQbX/terminal.jpg",
+    ],
+    cardName: ["Music", "Contact Me", "Fun Terminal"],
+    links: ["/music", "/Hire", "/Terminal"],
+  };
 
   return (
     <>
       <div className="bg-[#141414] w-full min-h-screen">
-        <Header avatar={"src/assets/Recruiter.png"}/>
+        <Header avatar={"src/assets/Recruiter.png"} />
         <div>
           <HeroSection
             className={"h-[75vh] items-center bg-center"}
@@ -30,15 +49,17 @@ function Recruiter() {
           />
         </div>
         <div className="pb-2">
-          <CardRow 
-            title="Today's Top Picks for recruiter" 
-            images={images}
-            CardName={"Hello"}
+          <CardRow
+            title="Today's Top Picks for recruiter"
+            images={cardData.images}
+            CardName={cardData.cardName}
+            links={cardData.links}
           />
-          <CardRow 
+          <CardRow
             title={"Continue Watching for recruiter"}
-            images={images}
-            CardName={"Hello"}
+            images={continueWatchingData.images}
+            CardName={continueWatchingData.cardName}
+            links={continueWatchingData.links}
           />
         </div>
       </div>

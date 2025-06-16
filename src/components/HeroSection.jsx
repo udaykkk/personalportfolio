@@ -17,6 +17,7 @@ function HeroSection({ video, className, content, title }) {
         <div className="text-white text-base font-bold max-w-3/4 ">{content}</div>
         <div className="flex flex-row gap-5">
           <div>
+            <a href="https://drive.google.com/file/d/1-veXIp9AYCFM2azDdbsWfRad4uV04TvE/view?usp=sharing" target="_blank">
             <button
               className="flex items-center gap-2 text-black font-bold bg-white pt-3 pb-3 pr-5 pl-5 rounded-sm m-0 cursor-pointer"
               style={{
@@ -25,6 +26,7 @@ function HeroSection({ video, className, content, title }) {
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="black" role="img" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z" fill="black"></path></svg> <span className="text-base">RESUME</span>
             </button>
+            </a>
           </div>
           <div>
             <a href="https://www.linkedin.com/in/anurag-banerjee007/" target="_blank">

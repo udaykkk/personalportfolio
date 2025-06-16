@@ -32,10 +32,10 @@ function CardRow({ title, images, CardName, links }) {
               <div
                 className={`relative ${
                   index === 0 ? "ml-8" : "ml-4"
-                } flex-shrink-0 overflow-hidden rounded-md cursor-pointer`}
+                } flex-shrink-0 overflow-hidden rounded-md cursor-pointer w-72 h-40`}
               >
                 <img
-                  className="max-w-72 max-h-auto transition-all duration-300 hover:scale-110 hover:shadow-[8px_8px_10px_rgba(239,68,68,0.8)]"
+                  className="w-full h-full object-cover transition-all duration-300 hover:scale-110 hover:shadow-[8px_8px_10px_rgba(239,68,68,0.8)]"
                   src={image}
                   alt="placeholder"
                 />

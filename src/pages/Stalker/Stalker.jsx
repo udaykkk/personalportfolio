@@ -4,14 +4,23 @@ import Header from "../../components/Header";
 import CardRow from "../../components/CardRow";
 
 function Recruiter() {
-  const images = [
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400",
-    "https://placehold.co/600x400"
-  ];
+  const cardData = {
+    images: [
+      "https://i.ibb.co/d4R5TvD3/dave-michael-ied-YX4wsxw-I-unsplash.jpg",
+      "https://i.ibb.co/6RswpdgW/project.jpg",
+      "https://i.ibb.co/nqGKFBj2/image.png",
+      "https://i.ibb.co/yBX4v91v/image.png",
+      "https://i.ibb.co/Xk7q6ntP/github-mark.png",
+    ],
+    cardName: ["Skills", "Projects", "Experience", "Contact Me", "Github"],
+    links: [
+      "/skills",
+      "/Project",
+      "/professional",
+      "/Hire",
+      "https://github.com/shadowguy01234",
+    ],
+  };
 
   return (
     <>
@@ -30,13 +39,17 @@ function Recruiter() {
           />
         </div>
         <div className="pb-2">
-          <CardRow 
-            title="Today's Top Picks for recruiter" 
-            images={images}
+          <CardRow
+            title="Today's Top Picks for recruiter"
+            images={cardData.images}
+            CardName={cardData.cardName}
+            links={cardData.links}
           />
-          <CardRow 
-            title={"Continue Watching for recruiter"}
-            images={images}
+          <CardRow
+            title="Today's Top Picks for recruiter"
+            images={cardData.images}
+            CardName={cardData.cardName}
+            links={cardData.links}
           />
         </div>
       </div>

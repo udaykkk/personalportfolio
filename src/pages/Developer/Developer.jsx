@@ -12,19 +12,35 @@ function Recruiter() {
       "https://i.ibb.co/yBX4v91v/image.png",
       "https://i.ibb.co/nqGKFBj2/image.png",
       "https://i.ibb.co/3yG8fQbX/terminal.jpg",
-      "https://placehold.co/600x400",
+      "https://i.ibb.co/Xk7q6ntP/github-mark.png",
     ],
-    cardName: ["Projects", "Skills", "Contact Me", "Experience", "Fun Terminal"],
+    cardName: [
+      "Projects",
+      "Skills",
+      "Contact Me",
+      "Experience",
+      "Fun Terminal",
+      "Github",
+    ],
     links: [
-    "/Project",           
-    "/skills",            
-    "/Hire", 
-    "/professional",        
-    "/Terminal",         
-    "https://github.com/username", 
-  ]
+      "/Project",
+      "/skills",
+      "/Hire",
+      "/professional",
+      "/Terminal",
+      "https://github.com/shadowguy01234",
+    ],
   };
 
+  const continueWatchingData = {
+    images: [
+      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
+      "https://i.ibb.co/Xk7q6ntP/github-mark.png",
+      "https://i.ibb.co/3yG8fQbX/terminal.jpg",
+    ],
+    cardName: ["Music", "Github", "Fun Terminal"],
+    links: ["/music", "https://github.com/shadowguy01234", "/Terminal"],
+  };
 
   return (
     <>
@@ -51,12 +67,11 @@ function Recruiter() {
           />
           <CardRow
             title={"Continue Watching for recruiter"}
-            images={cardData.images}
-            CardName={cardData.cardName}
-            links={cardData.links}
+            images={continueWatchingData.images}
+            CardName={continueWatchingData.cardName}
+            links={continueWatchingData.links}
           />
         </div>
-          
       </div>
     </>
   );
