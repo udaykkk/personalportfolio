@@ -11,7 +11,7 @@ const TrackCard = ({ track }) => {
   };
 
   return (
-    <div className="bg-zinc-900 rounded-lg overflow-hidden transition-all duration-300 hover:bg-zinc-800 hover:scale-105 cursor-pointer group">
+    <div className="bg-zinc-900 rounded-lg overflow-hidden transition-all duration-300 hover:shadow-[-8px_8px_15px_rgba(239,68,68,0.3),_8px_8px_15px_rgba(239,68,68,0.3)] cursor-pointer group">
       <div className="relative">
         <img
           src={track.image}

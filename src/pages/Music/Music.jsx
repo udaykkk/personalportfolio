@@ -75,29 +75,61 @@ const Music = () => {
       id: 1,
       name: "Radiohead",
       image: "https://picsum.photos/400/400?random=1",
+      artistLink: "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",
       topTracks: ["Creep", "Karma Police", "No Surprises"],
+      trackLinks: [
+        "https://open.spotify.com/track/70LcF31zb1H0PyJoS1Sx1r",
+        "https://open.spotify.com/track/63OQupATfueTbGkDxkjJYN",
+        "https://open.spotify.com/track/6b2oQwSGFkzsMtQjfvbGd1",
+      ],
+      seeTopTracksLink:
+        "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",
     },
     {
       id: 2,
       name: "Pink Floyd",
       image: "https://picsum.photos/400/400?random=2",
+      artistLink: "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9",
       topTracks: [
         "Comfortably Numb",
         "Wish You Were Here",
         "Another Brick in the Wall",
       ],
+      trackLinks: [
+        "https://open.spotify.com/track/4gMgiXfqyzZLMhsksGmbQV",
+        "https://open.spotify.com/track/6mFkJmJqdDVQ1REhVfGgd1",
+        "https://open.spotify.com/track/1Tqn7hfbZPjOy9ORy8K5zr",
+      ],
+      seeTopTracksLink:
+        "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9",
     },
     {
       id: 3,
       name: "The Weeknd",
       image: "https://picsum.photos/400/400?random=3",
+      artistLink: "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ",
       topTracks: ["Blinding Lights", "The Hills", "Can't Feel My Face"],
+      trackLinks: [
+        "https://open.spotify.com/track/0VjIjW4GlUKhIiokGhaDiR",
+        "https://open.spotify.com/track/7fBv7CLKzipRk6EC6TWHOB",
+        "https://open.spotify.com/track/01Ix9xYXjl3F8W9vRTBjOa",
+      ],
+      seeTopTracksLink:
+        "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ",
     },
     {
       id: 4,
       name: "Lindsey Stirling",
       image: "https://picsum.photos/400/400?random=4",
+      artistLink: "https://open.spotify.com/artist/2aGWGNaQMEJqWnMmrcCE7u",
       topTracks: ["Crystallize", "Elements", "Shatter Me"],
+      trackLinks: [
+        "https://open.spotify.com/track/0YvgQhSWTbw6z3D3DhxwQd",
+        "https://open.spotify.com/track/4kYjHqVPu0eJv3kJUQFg2A",
+        "https://open.spotify.com/track/5XqKBJJZez2fPWnTJ2S4YX",
+      ],
+      seeTopTracksLink:
+        "https://open.spotify.com/artist/2aGWGNaQMEJqWnMmrcCE7u",
     },
   ];
 
@@ -132,18 +164,16 @@ const Music = () => {
     },
   ];
 
-  // Set playlist when component mounts
   useEffect(() => {
     setPlaylist(recentTracks);
   }, []);
 
   return (
-    <div className="bg-black min-h-screen text-white">
+    <div className="bg-[#141414] min-h-screen text-white">
       <Header />
       <div className="pt-20 px-8 pb-32">
-        {/* Hero Section */}
         <div className="text-center mb-12">
-          <h1 className="text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+          <h1 className="text-6xl font-bold mb-4 text-white bg-clip-text ">
             My Sonic Spectrum
           </h1>
           <p className="text-xl text-gray-400">
@@ -151,9 +181,10 @@ const Music = () => {
           </p>
         </div>
 
-        {/* Top Genres */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Top Genres</h2>
+          <h2 className="text-3xl font-bold mb-6 underline decoration-red-500 decoration-2 underline-offset-7">
+            Top Genres
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {topGenres.map((genre) => (
               <MusicGenreCard key={genre.id} genre={genre} />
@@ -161,9 +192,10 @@ const Music = () => {
           </div>
         </section>
 
-        {/* Coding Vibes */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Coding Vibes</h2>
+          <h2 className="text-3xl font-bold mb-6 underline decoration-red-500 decoration-2 underline-offset-7">
+            Coding Vibes
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {codingVibes.map((vibe) => (
               <MusicGenreCard key={vibe.id} genre={vibe} />
@@ -171,9 +203,10 @@ const Music = () => {
           </div>
         </section>
 
-        {/* Artists I'm Loyal To */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Artists I'm Loyal To</h2>
+          <h2 className="text-3xl font-bold mb-6 underline decoration-red-500 decoration-2 underline-offset-7">
+            Artists I'm Loyal To
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {loyalArtists.map((artist) => (
               <ArtistCard key={artist.id} artist={artist} />
@@ -181,9 +214,10 @@ const Music = () => {
           </div>
         </section>
 
-        {/* Recently Obsessed With */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Recently Obsessed With</h2>
+          <h2 className="text-3xl font-bold mb-6 underline decoration-red-500 decoration-2 underline-offset-7">
+            Recently Obsessed With
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {recentTracks.map((track) => (
               <TrackCard key={track.id} track={track} />
@@ -192,7 +226,6 @@ const Music = () => {
         </section>
       </div>
 
-      {/* Music Player */}
       <MusicPlayer tracks={recentTracks} />
     </div>
   );

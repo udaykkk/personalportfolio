@@ -82,7 +82,6 @@ const MusicPlayer = ({ tracks }) => {
       />
 
       <div className="flex items-center justify-between max-w-screen-xl mx-auto">
-        {/* Track Info */}
         <div className="flex items-center space-x-4 flex-1">
           <img
             src={currentTrack.image}
@@ -97,7 +96,6 @@ const MusicPlayer = ({ tracks }) => {
           </div>
         </div>
 
-        {/* Player Controls */}
         <div className="flex flex-col items-center flex-2 max-w-md">
           <div className="flex items-center space-x-4 mb-2">
             <button
@@ -142,7 +140,6 @@ const MusicPlayer = ({ tracks }) => {
             </button>
           </div>
 
-          {/* Progress Bar */}
           <div className="flex items-center space-x-2 w-full">
             <span className="text-xs text-gray-400">
               {formatTime(currentTime)}
@@ -162,7 +159,6 @@ const MusicPlayer = ({ tracks }) => {
           </div>
         </div>
 
-        {/* Volume Control */}
         <div className="flex items-center space-x-2 flex-1 justify-end">
           <svg
             className="w-4 h-4 text-gray-400"
