@@ -11,7 +11,6 @@ import {
 import "./index.css";
 import App from "./App.jsx";
 import { TerminalContextProvider } from "react-terminal";
-import { MusicPlayerProvider } from "./Context/MusicPlayerContext.jsx";
 
 import Landing from "./pages/Landing/Landing.jsx";
 import Developer from "./pages/Developer/Developer.jsx";
@@ -45,8 +44,6 @@ const router = createBrowserRouter(
 
 createRoot(document.getElementById("root")).render(
   <TerminalContextProvider>
-    <MusicPlayerProvider>
-      <RouterProvider router={router} />
-    </MusicPlayerProvider>
+    <RouterProvider router={router} />
   </TerminalContextProvider>
 );

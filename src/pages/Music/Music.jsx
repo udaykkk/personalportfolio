@@ -1,172 +1,133 @@
-import React, { useContext, useEffect } from "react";
+import React from "react";
 import Header from "../../components/Header";
 import MusicGenreCard from "../../components/MusicGenreCard";
 import ArtistCard from "../../components/ArtistCard";
-import TrackCard from "../../components/TrackCard";
-import MusicPlayer from "../../components/MusicPlayer";
-import { MusicPlayerContext } from "../../Context/MusicPlayerContext";
+import SpotifyEmbed from "../../components/SpotifyEmbed";
 
 const Music = () => {
-  const { setPlaylist } = useContext(MusicPlayerContext);
   const topGenres = [
     {
       id: 1,
+      name: "Pop",
+      icon: "🎤",
+      color: "from-red-600 to-red-800",
+      tracks: ["Espresso", "Blinding Lights"],
+    },
+    {
+      id: 2,
+      name: "Desi",
+      icon: "🎵",
+      color: "from-teal-600 to-teal-800",
+      tracks: ["Farebi", "Roshni"],
+    },
+    {
+      id: 3,
+      name: "Phonk",
+      icon: "🔥",
+      color: "from-purple-600 to-purple-800",
+      tracks: ["Metamorphosis", "After Dark"],
+    },
+    {
+      id: 4,
       name: "Rock",
       icon: "🎸",
-      color: "from-red-600 to-red-800",
-      tracks: ["Bohemian Rhapsody", "Stairway to Heaven", "Sweet Child O Mine"],
-    },
-    {
-      id: 2,
-      name: "Lo-Fi",
-      icon: "🎧",
-      color: "from-teal-600 to-teal-800",
-      tracks: ["Lofi Hip Hop", "Study Beats", "Chill Vibes"],
-    },
-    {
-      id: 3,
-      name: "Synthwave",
-      icon: "🎹",
-      color: "from-purple-600 to-purple-800",
-      tracks: ["Neon Dreams", "Retrowave", "Cyberpunk 2077"],
-    },
-    {
-      id: 4,
-      name: "Classical",
-      icon: "🎻",
       color: "from-yellow-700 to-yellow-900",
-      tracks: ["Canon in D", "Moonlight Sonata", "Symphony No. 9"],
-    },
-  ];
-
-  const codingVibes = [
-    {
-      id: 1,
-      name: "Chill",
-      icon: "😎",
-      color: "from-indigo-600 to-indigo-800",
-      description: "Relaxed coding sessions",
-    },
-    {
-      id: 2,
-      name: "Work Vibes",
-      icon: "🚀",
-      color: "from-blue-600 to-blue-800",
-      description: "Productive focus music",
-    },
-    {
-      id: 3,
-      name: "Heartbeat",
-      icon: "❤️",
-      color: "from-red-600 to-red-800",
-      description: "Energetic coding beats",
-    },
-    {
-      id: 4,
-      name: "Mindful",
-      icon: "🧘",
-      color: "from-green-600 to-green-800",
-      description: "Meditative programming",
+      tracks: ["Bohemian Rapsody", "We will rock you"],
     },
   ];
 
   const loyalArtists = [
     {
       id: 1,
-      name: "Radiohead",
-      image: "https://picsum.photos/400/400?random=1",
-      artistLink: "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",
-      topTracks: ["Creep", "Karma Police", "No Surprises"],
+      name: "AJR",
+      image: "https://i.scdn.co/image/ab67616100005174e65fa0329c232ac6f5040f80",
+      artistLink: "https://open.spotify.com/artist/6s22t5Y3prQHyaHWUN1R1C",
+      topTracks: ["Bang!", "World's Smallest Voilin", "Burn the House Down"],
       trackLinks: [
-        "https://open.spotify.com/track/70LcF31zb1H0PyJoS1Sx1r",
-        "https://open.spotify.com/track/63OQupATfueTbGkDxkjJYN",
-        "https://open.spotify.com/track/6b2oQwSGFkzsMtQjfvbGd1",
+        "https://open.spotify.com/track/2I2AqFb0f9UNnolWc2MafC?si=046d5df024734ce9",
+        "https://open.spotify.com/track/68EkhVWIeULhHxcbi1QhzK?si=f6202e68eba546b2",
+        "https://open.spotify.com/track/4u8Gkqyg87iGSW3hQbbnQZ?si=cc5816e296364a02",
       ],
       seeTopTracksLink:
-        "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb",
+        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3Oe9Dq?si=fMZ_UOiZTVWz26tfIL2dvg",
     },
     {
       id: 2,
-      name: "Pink Floyd",
-      image: "https://picsum.photos/400/400?random=2",
-      artistLink: "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9",
-      topTracks: [
-        "Comfortably Numb",
-        "Wish You Were Here",
-        "Another Brick in the Wall",
-      ],
+      name: "Kendrick Lamar",
+      image: "https://i.scdn.co/image/ab6761610000517439ba6dcd4355c03de0b50918",
+      artistLink:
+        "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg?si=u5bv1wlTTkW46Dx8fMVrrQ",
+      topTracks: ["All The Stars", "Not like us", "tv off"],
       trackLinks: [
-        "https://open.spotify.com/track/4gMgiXfqyzZLMhsksGmbQV",
-        "https://open.spotify.com/track/6mFkJmJqdDVQ1REhVfGgd1",
-        "https://open.spotify.com/track/1Tqn7hfbZPjOy9ORy8K5zr",
+        "https://open.spotify.com/track/3GCdLUSnKSMJhs4Tj6CV3s?si=274a9340bc424b24",
+        "https://open.spotify.com/track/6AI3ezQ4o3HUoP6Dhudph3?si=91d04ab1b65a480e",
+        "https://open.spotify.com/track/0aB0v4027ukVziUGwVGYpG?si=58568f4e7c524354",
       ],
       seeTopTracksLink:
-        "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9",
+        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO1IPOOk?si=1ee21a669ad046f9",
     },
     {
       id: 3,
-      name: "The Weeknd",
-      image: "https://picsum.photos/400/400?random=3",
-      artistLink: "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ",
-      topTracks: ["Blinding Lights", "The Hills", "Can't Feel My Face"],
+      name: "Justin Bieber",
+      image: "https://i.scdn.co/image/ab676161000051748ae7f2aaa9817a704a87ea36",
+      artistLink:
+        "https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s?si=QB92kEqVQ0iNuGVkXbbwFw",
+      topTracks: ["STAY", "Love Yourself", "Ghost"],
       trackLinks: [
-        "https://open.spotify.com/track/0VjIjW4GlUKhIiokGhaDiR",
-        "https://open.spotify.com/track/7fBv7CLKzipRk6EC6TWHOB",
-        "https://open.spotify.com/track/01Ix9xYXjl3F8W9vRTBjOa",
+        "https://open.spotify.com/track/567e29TDzLwZwfDuEpGTwo?si=65b3f664322a473b",
+        "https://open.spotify.com/track/50kpGaPAhYJ3sGmk6vplg0?si=c96ad328d9d04d30",
+        "https://open.spotify.com/track/6I3mqTwhRpn34SLVafSH7G?si=1be3970475ec42c4",
       ],
       seeTopTracksLink:
-        "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ",
+        "https://open.spotify.com/playlist/37i9dQZF1DXc2aPBXGmXrt?si=EEakuAe8TY2DPgDdBVbyLQ",
     },
     {
       id: 4,
-      name: "Lindsey Stirling",
-      image: "https://picsum.photos/400/400?random=4",
-      artistLink: "https://open.spotify.com/artist/2aGWGNaQMEJqWnMmrcCE7u",
-      topTracks: ["Crystallize", "Elements", "Shatter Me"],
+      name: "Ritviz",
+      image: "https://i.scdn.co/image/ab676161000051743bc0e5f9b29553ed9d2bce18",
+      artistLink:
+        "https://open.spotify.com/artist/72beYOeW2sb2yfcS4JsRvb?si=GsSUtmUrSySOkgJZX8tD3A",
+      topTracks: ["Liggi", "Udd Gaye", "Ari Ari"],
       trackLinks: [
-        "https://open.spotify.com/track/0YvgQhSWTbw6z3D3DhxwQd",
-        "https://open.spotify.com/track/4kYjHqVPu0eJv3kJUQFg2A",
-        "https://open.spotify.com/track/5XqKBJJZez2fPWnTJ2S4YX",
+        "https://open.spotify.com/track/7tbzfR8ZvZzJEzy6v0d6el?si=c24db3bbd9ce4529",
+        "https://open.spotify.com/track/5ZsAhuQ24mWHiduaxJqnhW?si=79474ea1555e4127",
+        "https://open.spotify.com/track/3edqjLVQrRPLvt9FAYUAsT?si=a75ae4bf88224f08",
       ],
       seeTopTracksLink:
-        "https://open.spotify.com/artist/2aGWGNaQMEJqWnMmrcCE7u",
+        "https://open.spotify.com/playlist/37i9dQZF1DZ06evO49YTXz?si=bf249afcd7674cd5",
     },
   ];
 
-  const recentTracks = [
+  const featuredSpotifyTracks = [
     {
       id: 1,
-      title: "Blinding Lights",
-      artist: "The Weeknd",
-      image: "https://picsum.photos/400/400?random=5",
-      audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      title: "Roshni",
+      artist: "Chaar Diwaari",
+      spotifyUrl:
+        "https://open.spotify.com/track/2HG7HYy6d5aVAPoBNdWjs6?si=af8333e16a1c493d",
     },
     {
       id: 2,
-      title: "Midnight City",
-      artist: "M83",
-      image: "https://picsum.photos/400/400?random=6",
-      audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+      title: "Not like us",
+      artist: "Kendrick Lamar",
+      spotifyUrl:
+        "https://open.spotify.com/track/6AI3ezQ4o3HUoP6Dhudph3?si=34bb13e978fc4b94",
     },
     {
       id: 3,
-      title: "Clair de Lune",
-      artist: "Claude Debussy",
-      image: "https://picsum.photos/400/400?random=7",
-      audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+      title: "Attention",
+      artist: "Charlie Puth",
+      spotifyUrl:
+        "https://open.spotify.com/track/5cF0dROlMOK5uNZtivgu50?si=4eeee3c3ab3c40af",
     },
     {
       id: 4,
-      title: "Dawn FM",
-      artist: "The Weeknd",
-      image: "https://picsum.photos/400/400?random=8",
-      audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+      title: "Die with a Smile",
+      artist: "Bruno Mars, Lady Gaga",
+      spotifyUrl:
+        "https://open.spotify.com/track/2plbrEY59IikOBgBGLjaoe?si=8c1051f7ef224fdb",
     },
   ];
-
-  useEffect(() => {
-    setPlaylist(recentTracks);
-  }, []);
 
   return (
     <div className="bg-[#141414] min-h-screen text-white">
@@ -194,17 +155,6 @@ const Music = () => {
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 underline decoration-red-500 decoration-2 underline-offset-7">
-            Coding Vibes
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {codingVibes.map((vibe) => (
-              <MusicGenreCard key={vibe.id} genre={vibe} />
-            ))}
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 underline decoration-red-500 decoration-2 underline-offset-7">
             Artists I'm Loyal To
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -218,15 +168,18 @@ const Music = () => {
           <h2 className="text-3xl font-bold mb-6 underline decoration-red-500 decoration-2 underline-offset-7">
             Recently Obsessed With
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {recentTracks.map((track) => (
-              <TrackCard key={track.id} track={track} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+            {featuredSpotifyTracks.map((track) => (
+              <SpotifyEmbed
+                key={track.id}
+                spotifyUrl={track.spotifyUrl}
+                title={track.title}
+                artist={track.artist}
+              />
             ))}
           </div>
         </section>
       </div>
-
-      <MusicPlayer tracks={recentTracks} />
     </div>
   );
 };

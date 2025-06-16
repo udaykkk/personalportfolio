@@ -8,8 +8,19 @@ const MusicGenreCard = ({ genre }) => {
       <div className="relative z-10">
         <div className="text-4xl mb-2">{genre.icon}</div>
         <h3 className="text-xl font-bold text-white">{genre.name}</h3>
-        {genre.description && (
-          <p className="text-sm text-white/80 mt-1">{genre.description}</p>
+        {genre.tracks && (
+          <div className="mt-2">
+            {genre.tracks.slice(0, 2).map((track, index) => (
+              <p key={index} className="text-xs text-white/80 truncate">
+                • {track}
+              </p>
+            ))}
+            {genre.tracks.length > 2 && (
+              <p className="text-xs text-white/60 mt-1">
+                +{genre.tracks.length - 2} more
+              </p>
+            )}
+          </div>
         )}
       </div>
 
