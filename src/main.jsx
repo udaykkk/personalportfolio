@@ -24,6 +24,7 @@ import Professional from "./pages/Professional/Professional.jsx";
 import Terminal from "./components/Terminal.jsx";
 import Music from "./pages/Music/Music.jsx";
 import Game from "./pages/Game/Game.jsx";
+import Destination from "./pages/Destination/Destination.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
       <Route path="/terminal" element={<Terminal />} />
       <Route path="/music" element={<Music />} />
       <Route path="/game" element={<Game />} />
+      <Route path="/destination" element={<Destination />} />
     </>
   )
 );
