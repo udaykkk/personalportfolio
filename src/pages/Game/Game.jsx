@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import PlatformCard from "../../components/PlatformCard";
 import GenreCard from "../../components/GenreCard";
 import GameCard from "../../components/GameCard";
+import { GiPistolGun } from "react-icons/gi";
 
 const Game = () => {
   const platforms = [
@@ -22,10 +23,10 @@ const Game = () => {
     },
     {
       id: 3,
-      name: "Xbox",
-      icon: "⚡",
+      name: "Mobile",
+      icon: "📱",
       bgColor: "bg-gradient-to-br from-green-600 to-green-800",
-      description: "Game Pass Ultimate",
+      description: "Andriod Gaming",
     },
     {
       id: 4,
@@ -39,8 +40,8 @@ const Game = () => {
   const topGenres = [
     {
       id: 1,
-      name: "Role-Playing",
-      icon: "🐉",
+      name: "First Person Shooter",
+      icon: <GiPistolGun />,
       bgColor: "bg-gradient-to-br from-orange-600 to-orange-800",
       description: "Epic adventures & character development",
     },
@@ -54,7 +55,7 @@ const Game = () => {
     {
       id: 3,
       name: "Action",
-      icon: "✊",
+      icon: "⚡",
       bgColor: "bg-gradient-to-br from-purple-600 to-purple-800",
       description: "Fast-paced combat & thrills",
     },
@@ -70,38 +71,38 @@ const Game = () => {
   const mostPlayedGames = [
     {
       id: 1,
-      title: "The Witcher 3",
+      title: "Batman Arkham Series",
       image:
-        "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=300&fit=crop",
-      description: "Wild Hunt - Complete Edition",
-      platform: "PC",
+        "https://upload.wikimedia.org/wikipedia/en/6/6c/Batman_Arkham_Knight_Cover_Art.jpg",
+      description: "One of the best 3rd person Action-Adventure",
+      platform: "PC, PS4",
       rating: "9.8",
     },
     {
       id: 2,
-      title: "The Legend of Zelda",
+      title: "Grand Theft auto",
       image:
-        "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=400&h=300&fit=crop",
-      description: "Breath of the Wild",
-      platform: "Nintendo Switch",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Grand_Theft_Auto_logo_series.svg",
+      description: "One of the greatest game ever made",
+      platform: "PC, PS4, PS5, Xbox",
       rating: "9.7",
     },
     {
       id: 3,
-      title: "Persona 5 Royal",
+      title: "Cyberpunk-2077",
       image:
-        "https://images.unsplash.com/photo-1556438064-2d7646166914?w=400&h=300&fit=crop",
-      description: "Enhanced edition with new content",
-      platform: "PlayStation",
+        "https://upload.wikimedia.org/wikipedia/en/9/9f/Cyberpunk_2077_box_art.jpg",
+      description: "Modern-Genre defining open world",
+      platform: "PC, PS4, PS5, Xbox",
       rating: "9.6",
     },
     {
       id: 4,
-      title: "Stardew Valley",
+      title: "Need for Speed-Most Wanted (2005)",
       image:
-        "https://images.unsplash.com/photo-1574113878523-5e88e6cd4e31?w=400&h=300&fit=crop",
-      description: "Relaxing farming simulation",
-      platform: "Multi-platform",
+        "https://upload.wikimedia.org/wikipedia/en/8/8e/Need_for_Speed_Most_Wanted_Box_Art.jpg",
+      description: "Best arcade racing game",
+      platform: "PC",
       rating: "9.5",
     },
   ];
@@ -143,14 +144,12 @@ const Game = () => {
           <h2 className="text-3xl font-bold mb-6 underline decoration-red-500 decoration-2 underline-offset-7">
             Most Played
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {mostPlayedGames.map((game) => (
               <GameCard key={game.id} game={game} />
             ))}
           </div>
         </section>
-
-        
       </div>
     </div>
   );

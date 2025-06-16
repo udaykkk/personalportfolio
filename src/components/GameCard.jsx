@@ -3,11 +3,11 @@ import React from "react";
 const GameCard = ({ game }) => {
   return (
     <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-red-500/20 transition-all duration-300 transform hover:scale-105 border border-gray-700/50 overflow-hidden">
-      <div className="aspect-w-16 aspect-h-9 relative">
+      <div className="relative h-64 bg-gray-800/50 flex items-center justify-center">
         <img
           src={game.image}
           alt={game.title}
-          className="w-full h-48 object-cover"
+          className="w-full h-full object-contain rounded-t-xl"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
       </div>
