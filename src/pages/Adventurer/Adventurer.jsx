@@ -44,7 +44,7 @@ function Adventurer() {
   return (
     <>
       <div className="bg-[#141414] w-full min-h-screen">
-        <Header avatar={"src/assets/Adventurer.png"} />
+        <Header avatar={"https://i.ibb.co/R4T4j58x/image.png"} />
         <div>
           <HeroSection
             className={"h-[75vh] items-center bg-center"}

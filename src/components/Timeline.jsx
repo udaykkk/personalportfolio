@@ -4,13 +4,14 @@ function TimelineItem({
   position,
   company,
   duration,
+  location,
+  role,
   technologies,
   achievements,
   isLeft = true,
 }) {
   return (
     <div className="relative flex items-center mb-16">
-      {/* Timeline line and circle */}
       <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center h-full">
         <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center z-10">
           <svg
@@ -29,14 +30,12 @@ function TimelineItem({
         <div className="w-1 bg-white flex-1 mt-2"></div>
       </div>
 
-      {/* Content */}
       <div className={`w-5/12 ${isLeft ? "pr-8" : "ml-auto pl-8"}`}>
         <div
           className={`${
             isLeft ? "bg-blue-500" : "bg-gray-200"
           } p-6 rounded-lg shadow-lg relative`}
         >
-          {/* Arrow */}
           <div
             className={`absolute top-4 ${
               isLeft ? "-right-2" : "-left-2"
@@ -53,12 +52,32 @@ function TimelineItem({
             {position}
           </h3>
           <h4
-            className={`text-lg font-semibold mb-3 ${
+            className={`text-lg font-semibold mb-2 ${
               isLeft ? "text-blue-100" : "text-gray-600"
             }`}
           >
             {company}
           </h4>
+
+          {role && (
+            <p
+              className={`text-sm mb-2 ${
+                isLeft ? "text-blue-100" : "text-gray-600"
+              }`}
+            >
+              {role}
+            </p>
+          )}
+
+          {location && (
+            <p
+              className={`text-sm mb-3 ${
+                isLeft ? "text-blue-200" : "text-gray-500"
+              }`}
+            >
+              {location}
+            </p>
+          )}
 
           <div
             className={`flex items-center mb-4 ${

@@ -35,7 +35,7 @@ function Recruiter() {
   return (
     <>
       <div className="bg-[#141414] w-full min-h-screen">
-        <Header avatar={"src/assets/Recruiter.png"} />
+        <Header avatar={"https://i.ibb.co/5gvCxQNQ/image.png"} />
         <div>
           <HeroSection
             className={"h-[75vh] items-center bg-center"}
