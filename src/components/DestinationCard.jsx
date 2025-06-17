@@ -17,14 +17,14 @@ const DestinationCard = ({ destination, isHighlighted = false }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-        {/* Destination name at bottom */}
+      
         <div className="absolute bottom-0 left-0 right-0 p-6">
           <h3 className="text-white text-2xl font-bold text-center">
             {destination.name}
           </h3>
         </div>
 
-        {/* Hover overlay with description */}
+      
         <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6">
           <div className="text-center">
             <h3 className="text-white text-2xl font-bold mb-3">
@@ -36,7 +36,7 @@ const DestinationCard = ({ destination, isHighlighted = false }) => {
           </div>
         </div>
 
-        {/* Teal border for highlighted card */}
+       
         {isHighlighted && (
           <div className="absolute inset-0 rounded-2xl border-2 border-cyan-400 pointer-events-none" />
         )}

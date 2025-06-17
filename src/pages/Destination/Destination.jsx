@@ -8,43 +8,43 @@ const Destination = () => {
   const destinations = [
     {
       id: 1,
-      name: "Santorini",
+      name: "Monaco",
       image:
-        "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1613732764162-251c03439b53?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "A breathtaking Greek island with stunning sunsets, white-washed buildings, and crystal blue waters. The perfect romantic getaway.",
+        "Monaco, where speed meets luxury on the streets of royalty.The Monaco Grand Prix is not just a race, it's a spectacle on asphalt.One day, I'll be there engines roaring, champagne flying, heart racing. 🏁✨",
     },
     {
       id: 2,
-      name: "Kyoto",
+      name: "Japan",
       image:
-        "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1542640244-7e672d6cef4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
         "Ancient temples, beautiful cherry blossoms, and traditional Japanese culture. A serene escape into history and nature.",
     },
     {
       id: 3,
-      name: "Iceland",
+      name: "Leh-Ladakh, J&K",
       image:
-        "https://images.unsplash.com/photo-1539066909543-605301a8c69f?w=400&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Dramatic landscapes with waterfalls, glaciers, and the Northern Lights. An adventurer's paradise of natural wonders.",
+        "Endless mountains, turquoise lakes, and roads that touch the sky.Every turn feels like a desktop wallpaper come to life.A dream for bikers, backpackers, and peace-seekers alike.",
     },
     {
       id: 4,
-      name: "Patagonia",
+      name: "Gangtok, Sikkim",
       image:
-        "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=600&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1697730403371-4637af8a7bf9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Untamed wilderness at the end of the world. Towering peaks, pristine lakes, and endless hiking adventures.",
+        "A hill town wrapped in clouds, culture, and calm.Prayer flags flutter above winding roads and cozy cafés.Perfect for soul-searching with a side of momo and mountain views."
     },
     {
       id: 5,
-      name: "Morocco",
+      name: "Kerela",
       image:
-        "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=400&h=600&fit=crop",
+        "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Vibrant markets, stunning architecture, and rich cultural heritage. A sensory journey through ancient traditions.",
+        "Backwaters, beaches, and the sound of rustling palms.From houseboat sunsets to spicy food trails, it's pure magic.They don't call it “God's Own Country” for nothing.",
     },
   ];
 
