@@ -14,7 +14,7 @@ function HireMe() {
           alt="Profile Photo"
         />
         <img
-          src="src/assets/ANURAG-BANERJEE-3-6-2025.png"
+          src="https://i.ibb.co/BHC9tHDC/ANURAG-BANERJEE-3-6-2025.png"
           alt="Logo"
           className="h-10 w-auto"
         />
