@@ -31,15 +31,15 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<Landing />} />
-      <Route path="/developer" element={<Developer />} />
-      <Route path="/recruiter" element={<Recuiter />} />
-      <Route path="/adventurer" element={<Adventurer />} />
+      <Route path="/Developer" element={<Developer />} />
+      <Route path="/Recruiter" element={<Recuiter />} />
+      <Route path="/Adventurer" element={<Adventurer />} />
       <Route path="/friend" element={<Friends />} />
       <Route path="/Hire" element={<HireMe />} />
-      <Route path="/Skills" element={<Skills />} />
+      <Route path="/skills" element={<Skills />} />
       <Route path="/Project" element={<Project />} />
       <Route path="/professional" element={<Professional />} />
-      <Route path="/terminal" element={<Terminal />} />
+      <Route path="/Terminal" element={<Terminal />} />
       <Route path="/music" element={<Music />} />
       <Route path="/game" element={<Game />} />
       <Route path="/destination" element={<Destination />} />
