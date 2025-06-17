@@ -24,7 +24,7 @@ function Header({ avatar = "src/assets/Recruiter.png" }) {
         <div className="flex justify-start items-center gap-4">
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity duration-200">
             <img
-              src="src/assets/ANURAG-BANERJEE-3-6-2025.png"
+              src="https://i.ibb.co/BHC9tHDC/ANURAG-BANERJEE-3-6-2025.png"
               alt="Logo"
               className="h-8 w-auto"
             />
