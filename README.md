@@ -147,6 +147,7 @@ Portfolio/
 
 ## 📢 Credits & Inspiration
 
+- 🧠 Inspired by SumanthSamala.com with a personal twist, I wanted to create something unique yet professional to reflect all facets of who I am — not just the developer.
 - Inspired by Netflix's UI/UX and Pinterest's masonry grid
 - Built by Anurag Banerjee
 - Open source, feel free to fork and customize
