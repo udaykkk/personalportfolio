@@ -118,10 +118,33 @@ Portfolio/
 - `npm run dev` — Start local dev server
 - `npm run build` — Build for production
 - `npm run preview` — Preview production build
-- `npm run lint` — Lint codebase
+- `npm run lint` — Lint codebase!
 
-## 📢 Credits & Inspiration
+## 🧩 Planned Features & Ideas
+
+- **GSAP or Framer Motion Animations:**
+  - Add advanced, smooth animations and transitions for cards, page loads, and interactive elements using GSAP or Framer Motion.
+- **Dark/Light Theme Toggle:**
+  - Allow users to switch between dark and light modes for accessibility and preference.
+- **User Authentication & Personalization:**
+  - Add login/signup and personalized dashboards for different user types.
+- **Blog/Articles Section:**
+  - Share technical blogs, tutorials, and project write-ups.
+- **Contact Form with Email Integration:**
+  - Enable direct contact via email or integrated messaging.
+- **Progressive Web App (PWA) Support:**
+  - Make the portfolio installable and offline-ready.
+- **Accessibility Improvements:**
+  - Enhance keyboard navigation, ARIA labels, and color contrast.
+- **More Data Visualizations:**
+  - Add charts/graphs for skills, achievements, or project stats.
+- **Internationalization (i18n):**
+  - Support multiple languages for a global audience.
+- **More Integrations:**
+  - GitHub activity, LinkedIn, or other social widgets.
+
+  ## 📢 Credits & Inspiration
 
 - Inspired by Netflix's UI/UX and Pinterest's masonry grid
 - Built by Anurag Banerjee
-- Open source, feel free to fork and customize!
+- Open source, feel free to fork and customize
