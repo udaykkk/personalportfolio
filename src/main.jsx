@@ -25,6 +25,8 @@ import Terminal from "./components/Terminal.jsx";
 import Music from "./pages/Music/Music.jsx";
 import Game from "./pages/Game/Game.jsx";
 import Destination from "./pages/Destination/Destination.jsx";
+import MemePage from "./pages/Meme/Meme.jsx";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -42,6 +44,8 @@ const router = createBrowserRouter(
       <Route path="/music" element={<Music />} />
       <Route path="/game" element={<Game />} />
       <Route path="/destination" element={<Destination />} />
+      <Route path="/meme" element={<MemePage />} />
+
     </>
   )
 );
