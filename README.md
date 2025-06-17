@@ -1,4 +1,4 @@
-# Portfolio (Netflix-Inspired React Web App)
+# Portfolio (Netflix-Inspired Design)
 
 A modern, visually stunning portfolio web application inspired by Netflix's dark theme, card-based UI, and interactive experience. Built with React, Tailwind CSS, and Vite, this project showcases multiple perspectives (Developer, Recruiter, Friend, Adventurer) and a variety of interactive, themed pages.
 
@@ -124,6 +124,8 @@ Portfolio/
 
 - **GSAP or Framer Motion Animations:**
   - Add advanced, smooth animations and transitions for cards, page loads, and interactive elements using GSAP or Framer Motion.
+- **Netflix-Style Intro Animation:**
+  - Create an engaging startup animation similar to Netflix's iconic intro sequence, complete with sound effects and smooth transitions.
 - **Dark/Light Theme Toggle:**
   - Allow users to switch between dark and light modes for accessibility and preference.
 - **User Authentication & Personalization:**
