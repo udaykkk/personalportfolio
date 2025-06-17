@@ -15,7 +15,7 @@ import { TerminalContextProvider } from "react-terminal";
 import Landing from "./pages/Landing/Landing.jsx";
 import Developer from "./pages/Developer/Developer.jsx";
 import Recuiter from "./pages/Recruiter/Recruiter.jsx";
-import Stalker from "./pages/Stalker/Stalker.jsx";
+import Stalker from "./pages/Friends/Friend.jsx";
 import Adventurer from "./pages/Adventurer/Adventurer.jsx";
 import HireMe from "./pages/HireMe/HireMe.jsx";
 import Skills from "./pages/Skills/Skills.jsx";
@@ -26,7 +26,6 @@ import Music from "./pages/Music/Music.jsx";
 import Game from "./pages/Game/Game.jsx";
 import Destination from "./pages/Destination/Destination.jsx";
 import MemePage from "./pages/Meme/Meme.jsx";
-
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -45,7 +44,6 @@ const router = createBrowserRouter(
       <Route path="/game" element={<Game />} />
       <Route path="/destination" element={<Destination />} />
       <Route path="/meme" element={<MemePage />} />
-
     </>
   )
 );

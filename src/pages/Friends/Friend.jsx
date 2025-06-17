@@ -31,7 +31,7 @@ function Recruiter() {
             className={"h-[75vh] items-center bg-center"}
             title={"Anurag Banerjee - Aspiring Developer"}
             video={
-              "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzk3ZXBhZHN4bG9iMTB3YW9xd285enp5M254Z3M2amRvb3plYnB5YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/88QpRdAzV5z5KHygOn/giphy.gif"
+              "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG12NzFyMzZyZWd2Y281dzRhdzFmbWp0cnV0d3IxZzJ3d3Z5cTU1cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Qur3qH5qrLpGJauEcj/giphy.gif"
             }
             content={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque orci id neque scelerisque commodo ac eu neque. Maecenas ut rutrum mauris. Duis feugiat leo sed euismod ullamcorper. Sed dictum, ante vel varius lacinia, eros arcu fermentum urna, vitae suscipit tellus lectus sit amet enim. Vivamus pharetra volutpat ante non auctor. Mauris at libero tincidunt, mollis ex sollicitudin, fringilla velit. Duis sed mi id ante vulputate ultrices id ac quam. Fusce iaculis eu ligula imperdiet tincidunt. Nulla consectetur bibendum mauris eget tristique."

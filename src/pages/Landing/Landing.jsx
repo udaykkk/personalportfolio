@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import Developer from "../Developer/Developer";
 import Recruiter from "../Recruiter/Recruiter";
-import Stalker from "../Stalker/Stalker";
+import Stalker from "../Friends/Friend";
 import Adventurer from "../Adventurer/Adventurer";
 
 function Landing() {
@@ -32,12 +32,8 @@ function Landing() {
         </div>
         <div className="flex flex-col items-center">
           <Link to="/Stalker" className="flex flex-col items-center">
-            <img
-              src="src/assets/Stalker.png"
-              alt="Stalker"
-              className="mb-2"
-            />
-            <div className="text-white text-2xl">Stalker</div>
+            <img src="src/assets/Stalker.png" alt="Stalker" className="mb-2" />
+            <div className="text-white text-2xl">Friend</div>
           </Link>
         </div>
         <div className="flex flex-col items-center">
