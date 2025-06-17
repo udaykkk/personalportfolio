@@ -83,7 +83,7 @@ function Project() {
         />
         <ProjectCard
         link={"https://shadowguy01234.github.io/JS-Calculator/"}
-          image={"https://i.ibb.co/2YfkPxBz/image.png"}
+          image={"https://i.ibb.co/nNkSrm1d/image.png"}
           title={"Calculator"}
           description={
             "A simple and intuitive web-based calculator built using HTML, CSS, and JavaScript. This project provides basic arithmetic operations with a user-friendly interface."
