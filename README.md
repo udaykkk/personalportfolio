@@ -143,7 +143,7 @@ Portfolio/
 - **More Integrations:**
   - GitHub activity, LinkedIn, or other social widgets.
 
-  ## 📢 Credits & Inspiration
+## 📢 Credits & Inspiration
 
 - Inspired by Netflix's UI/UX and Pinterest's masonry grid
 - Built by Anurag Banerjee
