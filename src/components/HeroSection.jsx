@@ -21,7 +21,7 @@ function HeroSection({ video, className, content, title }) {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-5">
           <div>
             <a
-              href="https://drive.google.com/file/d/1-veXIp9AYCFM2azDdbsWfRad4uV04TvE/view?usp=sharing"
+              href="https://drive.google.com/file/d/119q0LNF8TfPsHCwebn64gnk97ExyZNrB/view?usp=sharing"
               target="_blank"
             >
               <button
