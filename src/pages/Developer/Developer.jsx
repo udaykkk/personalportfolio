@@ -50,14 +50,15 @@ function Recruiter() {
       "/meme",
     ],
   };
-
   return (
     <>
       <div className="bg-[#141414] w-full min-h-screen">
         <Header avatar={"https://i.ibb.co/Q7tdv0Qc/image.png"} />
         <div>
           <HeroSection
-            className={"h-[75vh] items-center bg-center"}
+            className={
+              "h-[75vh] sm:h-[60vh] md:h-[75vh] items-center bg-center"
+            }
             title={"Anurag Banerjee - Aspiring Developer"}
             video={
               "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGNidDl5emZpejY2eGFxa2I4NW0zZGNpbWRlbnBrZ3N2dWhhbzM1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TFPdmm3rdzeZ0kP3zG/giphy.gif"
@@ -67,7 +68,7 @@ function Recruiter() {
             }
           />
         </div>
-        <div className="pb-2">
+        <div className="pb-2 px-2 sm:px-0">
           <CardRow
             title="Today's Top Picks for Developers"
             images={cardData.images}

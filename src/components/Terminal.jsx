@@ -24,6 +24,7 @@ function Terminal() {
         "  linkedin    - Open LinkedIn profile |",
         "  resume      - View resume |",
         "  clear       - Clear terminal |",
+        " neofetch     - System Information |",
         "  joke        - Get a programming joke |",
         "  quote       - Get a coding quote |",
         "  date        - Show current date |",

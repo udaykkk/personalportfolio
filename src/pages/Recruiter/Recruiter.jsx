@@ -31,14 +31,15 @@ function Recruiter() {
     cardName: ["Music", "Contact Me", "Fun Terminal"],
     links: ["/music", "/Hire", "/Terminal"],
   };
-
   return (
     <>
       <div className="bg-[#141414] w-full min-h-screen">
         <Header avatar={"https://i.ibb.co/5gvCxQNQ/image.png"} />
         <div>
           <HeroSection
-            className={"h-[75vh] items-center bg-center"}
+            className={
+              "h-[75vh] sm:h-[60vh] md:h-[75vh] items-center bg-center"
+            }
             title={"Anurag Banerjee - Full-Stack Developer | Eager to Grow"}
             video={
               "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTZ5eWwwbjRpdWM1amxyd3VueHhteTVzajVjeGZtZGJ1dDc4MXMyNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/16u7Ifl2T4zYfQ932F/giphy.gif"
@@ -48,7 +49,7 @@ function Recruiter() {
             }
           />
         </div>
-        <div className="pb-2">
+        <div className="pb-2 px-2 sm:px-0">
           <CardRow
             title="Today's Top Picks for recruiter"
             images={cardData.images}
