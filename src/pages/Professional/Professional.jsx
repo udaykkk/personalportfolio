@@ -60,12 +60,11 @@ function Professional() {
       isLeft: false,
     },
   ];
-
   return (
     <div className="bg-gray-900 min-h-screen text-white">
       <Header />
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-center mb-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-4 py-12 sm:py-16">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 md:mb-16">
           Professional Experience
         </h1>
 

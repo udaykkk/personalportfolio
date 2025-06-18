@@ -147,7 +147,28 @@ Portfolio/
 
 ## 📢 Credits & Inspiration
 
-- 🧠 Inspired by SumanthSamala.com with a personal twist, I wanted to create something unique yet professional to reflect all facets of who I am — not just the developer.
+- Inspired by SumanthSamala.com with a personal twist, I wanted to create something unique yet professional to reflect all facets of who I am — not just the developer.
 - Inspired by Netflix's UI/UX and Pinterest's masonry grid
 - Built by Anurag Banerjee
 - Open source, feel free to fork and customize
+
+## 📸 Image Credits
+
+### Unsplash Photography
+
+I extend our gratitude to the talented photographers on Unsplash for providing beautiful, high-quality images used throughout this portfolio:
+
+- **Mountain/Adventure Photography**: [Unsplash](https://unsplash.com/photos/photo-1542640244-7e672d6cef4e) - Used in adventure and destination sections
+- **Music/Concert Photography**: [Unsplash](https://unsplash.com/photos/photo-1493225457124-a3eb161ffa5f) - Featured in music sections
+- **Gaming/Entertainment**: [Unsplash](https://unsplash.com/photos/photo-1511512578047-dfb367046420) - Used in gaming sections
+- **Technology/Meme Content**: [Unsplash](https://unsplash.com/photos/photo-1663435538397-822d13e4fe18) - Featured in meme and tech sections
+
+_All images are used under Unsplash's license terms. Original photographers retain all rights to their work._
+
+### External Image Services
+
+- **Image Hosting**: Images are hosted via various services including ibb.co and direct Unsplash links
+- **GIF Content**: Animated content sourced from Giphy with proper attribution
+- **Icons & Graphics**: Custom graphics and icons created for this project
+
+_Note: If you are a photographer and would like specific attribution or removal of your work, please contact the me._
