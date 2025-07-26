@@ -10,11 +10,11 @@ function HireMe() {
       <div className="w-full min-h-screen flex justify-center items-center flex-col gap-4">
         <img
           className="w-48 rounded-full"
-          src="https://media.licdn.com/dms/image/v2/D4D03AQEb7lfnqbkvxg/profile-displayphoto-shrink_800_800/B4DZb13lqqHQAc-/0/1747881713278?e=1755129600&v=beta&t=S5eHA6KNSBAG1Nuh76jF1JzaiyYiX6zFzhr_5dcgowI"
+          src="https://ibb.co/84TyBN1H"
           alt="Profile Photo"
         />
         <img
-          src="https://i.ibb.co/BHC9tHDC/ANURAG-BANERJEE-3-6-2025.png"
+          src="https://ibb.co/S4NyMkGL"
           alt="Logo"
           className="h-10 w-auto"
         />
@@ -27,7 +27,7 @@ function HireMe() {
         </p>
         <div className="flex gap-4">
           <a
-            href="https://www.linkedin.com/in/anurag-banerjee007"
+            href="https://www.linkedin.com/in/uday-krishna-66606822a"
             target="_blank"
           >
             <button className="flex bg-blue-800 p-2 rounded-xl items-center gap-2 hover:bg-blue-700 transition-colors cursor-pointer">
@@ -35,10 +35,10 @@ function HireMe() {
               <p className="text-white font-bold">LinkedIn</p>
             </button>
           </a>
-          <a href="mailto:anuragchess22@gmail.com">
+          <a href="mailto:udaykrishna212003@gmail.com">
             <button className="flex bg-zinc-800 p-2 rounded-xl items-center gap-2 hover:bg-zinc-700 transition-colors cursor-pointer">
               <MdOutlineMail className="text-white" />
-              <p className="text-white font-bold">anuragchess22@gmail.com</p>
+              <p className="text-white font-bold">udaykrishna212003@gmail.com</p>
             </button>
           </a>
         </div>

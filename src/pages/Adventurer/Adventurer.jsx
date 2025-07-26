@@ -27,7 +27,7 @@ function Adventurer() {
       "/Project",
       "/meme",
       "/Terminal",
-      "https://github.com/shadowguy01234",
+      "https://github.com/udaykkk/udaykkk",
     ],
   };
 
@@ -49,7 +49,7 @@ function Adventurer() {
             className={
               "h-[75vh] sm:h-[60vh] md:h-[75vh] items-center bg-center"
             }
-            title={"Anurag Banerjee - Traveling One Dream at a Time"}
+            title={"Uday Krishna - Traveling One Dream at a Time"}
             video={
               "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemI0YnplNnNzYTF5aTRmZWhpNnR5bDl2ZnVrY2VoeHFqbXFjdTd3MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/m9fmg3MQj8wb1FcOjY/giphy.gif"
             }

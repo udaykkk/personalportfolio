@@ -10,7 +10,7 @@ function Terminal() {
   );
 
   const commands = {
-    whoami: "Anurag Banerjee - Full Stack Developer",
+    whoami: "GUDIDEVUNI UDAY KRISHNA - Full Stack Developer",
     cd: (directory) => `changed path to ${directory}`,
     help: () =>
       [
@@ -56,9 +56,9 @@ function Terminal() {
 
     about: () =>
       [
-        "Hi, I'm Anurag Banerjee! 👨‍💻",
+        "Hi, I'm Gudidevuni Uday Krishna! 👨‍💻",
         "",
-        "🎓 Full Stack Developer from MMMUT",
+        "🎓 Full Stack Developer from SIET",
         "🚀 Passionate about creating innovative web solutions",
         "💡 Always learning new technologies",
         "🔧 Building better software one line at a time",
@@ -67,18 +67,18 @@ function Terminal() {
       ].join("\n"),
 
     github: () => {
-      window.open("https://github.com/ShadowGuy01234");
+      window.open("https://github.com/udaykkk/udaykkk");
       return "Opening GitHub profile... 🚀";
     },
 
     linkedin: () => {
-      window.open("https://linkedin.com/in/yourprofile");
+      window.open("https://www.linkedin.com/in/uday-krishna-66606822a");
       return "Opening LinkedIn profile... 💼";
     },
 
     resume: () => {
       window.open(
-        "https://drive.google.com/file/d/1-veXIp9AYCFM2azDdbsWfRad4uV04TvE/view?usp=sharing"
+        "https://drive.google.com/file/d/1kjwvI7K_oD2Xe0Ndd4DLR9XXL-dXfwcg/view?usp=drivesdk"
       );
       return "Opening resume... 📄";
     },
@@ -91,13 +91,13 @@ function Terminal() {
         "   • React.js, Tailwind CSS",
         "   • Responsive design with modern UI",
         "",
-        "🌤️ Weather Application",
-        "   • API integration",
-        "   • Real-time weather data",
+        "🌤️ Automatic Media Player Using Hand Gestures",
+        "   • Python ,CNN,OpenCV API integration",
+        "   • Real-time Controlling of media playback using hand gestures",
         "",
-        "🎓 EduVision",
-        "   • Educational platform",
-        "   • Student management system",
+        "🎓 Estimation Of Height Weight And BMI from FaceImage using ML",
+        "   • Python, OpenCV, TensorFlow, Keras,ResNet50",
+        "   • Real-time Detection of Height, Weight and BMI from Face Image",
         "",
         "Type 'github' to see more projects!",
       ].join("\n"),
@@ -177,7 +177,7 @@ function Terminal() {
         <ReactTerminal
           commands={commands}
           theme="matrix"
-          prompt="anurag@portfolio:~$"
+          prompt="UdayKrishna@portfolio:~$"
           showControlBar={false}
           errorMessage="bash: command not found"
           welcomeMessage={welcomeMessage}

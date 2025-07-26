@@ -18,7 +18,7 @@ function Recruiter() {
       "/Project",
       "/professional",
       "/Hire",
-      "https://github.com/shadowguy01234",
+      "https://github.com/udaykkk/udaykkk",
     ],
   };
 
@@ -40,7 +40,7 @@ function Recruiter() {
             className={
               "h-[75vh] sm:h-[60vh] md:h-[75vh] items-center bg-center"
             }
-            title={"Anurag Banerjee - Full-Stack Developer | Eager to Grow"}
+            title={"Udaykrishna - Full-Stack Developer | Eager to Grow"}
             video={
               "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTZ5eWwwbjRpdWM1amxyd3VueHhteTVzajVjeGZtZGJ1dDc4MXMyNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/16u7Ifl2T4zYfQ932F/giphy.gif"
             }

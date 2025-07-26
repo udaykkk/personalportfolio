@@ -35,13 +35,13 @@ function Friends() {
               "h-[75vh] sm:h-[60vh] md:h-[75vh] items-center bg-center"
             }
             title={
-              "Anurag Banerjee - This Page is Powered by Friendship & Wifi"
+              "UdayKrishna - This Page is Powered by Friendship & Wifi"
             }
             video={
               "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG12NzFyMzZyZWd2Y281dzRhdzFmbWp0cnV0d3IxZzJ3d3Z5cTU1cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Qur3qH5qrLpGJauEcj/giphy.gif"
             }
             content={
-              "This corner of my site is just for the people who know me beyond the code.Whether it's late-night rants, weird playlists, inside jokes, or meme dumps — welcome to the fun side of Anurag.Scroll through, laugh a little, and maybe remind me to sleep on time."
+              "This corner of my site is just for the people who know me beyond the code.Whether it's late-night rants, weird playlists, inside jokes, or meme dumps — welcome to the fun side of Uday.Scroll through, laugh a little, and maybe remind me to sleep on time."
             }
           />
         </div>

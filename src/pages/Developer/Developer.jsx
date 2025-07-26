@@ -31,7 +31,7 @@ function Recruiter() {
       "/meme",
       "/Terminal",
       "/professional",
-      "https://github.com/shadowguy01234",
+      "https://github.com/udaykkk/udaykkk",
     ],
   };
 
@@ -45,7 +45,7 @@ function Recruiter() {
     cardName: ["Music", "Github", "Fun Terminal", "Memes"],
     links: [
       "/music",
-      "https://github.com/shadowguy01234",
+      "https://github.com/udaykkk/udaykkk",
       "/Terminal",
       "/meme",
     ],
@@ -59,7 +59,7 @@ function Recruiter() {
             className={
               "h-[75vh] sm:h-[60vh] md:h-[75vh] items-center bg-center"
             }
-            title={"Anurag Banerjee - Aspiring Developer"}
+            title={"UdayKrishna - Aspiring Developer"}
             video={
               "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGNidDl5emZpejY2eGFxa2I4NW0zZGNpbWRlbnBrZ3N2dWhhbzM1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TFPdmm3rdzeZ0kP3zG/giphy.gif"
             }

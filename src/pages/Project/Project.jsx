@@ -46,7 +46,7 @@ function Project() {
           icons={projectData.iconsWeather}
         />
         <ProjectCard
-        link={"https://github.com/ShadowGuy01234/Classifi.git"}
+        link={"https://github.com/udaykkk/udaykkk"}
           image={"https://i.ibb.co/8Dmhy0WQ/1733405340830.jpg"}
           title={"ClassiFi"}
           description={

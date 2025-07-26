@@ -5,60 +5,44 @@ import Header from "../../components/Header";
 function Professional() {
   const experiences = [
     {
-      position: "🎓 First-Year B.Tech CSE Student",
-      company: "MMMUT, Gorakhpur",
-      duration: "Aug 2024 - Present",
-      location: "📍Gorakhpur, India",
+      position: "🎓 Final Year Student B.Tech CSE Data Science Student",
+      company: "SIET Nagole",
+      duration: "Sept 2021 - Present",
+      location: "📍Hyderabad, India",
       role: "Student | Developer",
       technologies: "🔧 DSA, Web Development, Computer Architecture",
       achievements: [
-        "Started the B.Tech journey in Computer Science and Engineering at MMMUT.",
+        "Started the B.Tech journey in Computer Science  DS and Engineering at SIET.",
         "Focused on building strong fundamentals in DSA, Web Development, and Computer Architecture.",
         "Participated in hackathons, coding events, and university-level workshops to enhance technical and collaborative skills.",
       ],
       isLeft: true,
     },
     {
-      position: "🏆 Top 5 Finalist - IIT Bombay Techfest Hackathon",
-      company: "Structify AI - Team Lead, ML Engineer & Backend Developer",
-      duration: "Dec 2024",
-      location: "📍Final Round, Mumbai (Finalist)",
-      technologies: "🔧 Node.js, Express, SVM, HTML/CSS/JS",
+      position: "🏆 Full Stack Developer Intern",
+      company: "IPAGE UM SERVICES PVT LTD ",
+      duration: "Oct 2024 to Dec 2024",
+      location: "📍Gachibowli Hyderabad",
+      technologies: "🔧  HTML/CSS/JS",
       achievements: [
-        "Built Structify AI, a document classification platform designed to automate labeling and organization tasks.",
-        "Designed a self-bootstrapping system using a custom SVM-based ML model — fully offline and API-independent.",
-        "Led a 4-member team, handling backend development in Node.js and Express, with a minimal HTML/CSS/JS frontend.",
-        "Architected a clean pipeline to process structured text, reducing manual sorting time by 90%.",
-        "Ranked in the Top 5 out of 1000+ teams at India's largest national-level hackathon at IIT Bombay.",
+        "Designed and developed an inventory management system for drone inventory, improving tracking efficiency by 30%.• Built responsive user interfaces using HTML, CSS, and JavaScript and SQL for a seamless user experience.",
+        
       ],
       isLeft: false,
     },
     {
-      position: "🔵 Tech Member - RESO Society, MMMUT",
-      company: "Web Developer",
-      duration: "Mar 2025 - Present",
-      location: "📍Gorakhpur, India",
-      technologies: "🔧 React, JavaScript, Frontend Development",
+      position: "Outlier AI",
+      company: "Freelane AI Trainer ",
+      duration: "Aug 2024 - Present",
+      location: "📍Remote",
+      technologies: "🔧 Python, Ml,LLM",
       achievements: [
-        "Contributed to mmmut.xyz and Samagra app, focusing on React-based frontend enhancements.",
-        "Initiated features like flashcard generation, and resource compilation for academic support.",
-        "Actively involved in ideation and prototyping of AI-integrated tools for campus utilities.",
+        "Trained AI models by analyzing and curating structured responses, increasing model accuracy by 25%.Provided detailed feedback on AI-generated outputs, refining algorithms for enhanced performance.Collaborated with teams to ensure high-quality AI datasets for machine learning projects.",
+        
       ],
       isLeft: true,
     },
-    {
-      position: "📝 Editorial Board - MMMUT",
-      company: "Writer & Content Contributor",
-      duration: "May 2025 - Present",
-      location: "📍MMMUT Campus",
-      technologies: "🔧 Content Writing, Technical Writing, Editorial Work",
-      achievements: [
-        "Selected for the university's editorial board based on writing and creative aptitude.",
-        "Contributed articles and reports for technical and cultural events conducted at MMMUT.",
-        "Assisted in curating content for university newsletters and public-facing communication.",
-      ],
-      isLeft: false,
-    },
+    
   ];
   return (
     <div className="bg-gray-900 min-h-screen text-white">

@@ -33,7 +33,7 @@ function Header({ avatar = "https://i.ibb.co/R4T4j58x/image.png" }) {
             className="flex items-center hover:opacity-80 transition-opacity duration-200 flex-shrink-0"
           >
             <img
-              src="https://i.ibb.co/BHC9tHDC/ANURAG-BANERJEE-3-6-2025.png"
+              src="https://ibb.co/S4NyMkGL"
               alt="Logo"
               className="h-6 sm:h-8 w-auto max-w-none"
             />

@@ -78,7 +78,7 @@ function Skills() {
     {
       id: 1,
       icon: <FaC />,
-      title: "C",
+      title: "Java",
       description: "Coding Language",
     },
     {

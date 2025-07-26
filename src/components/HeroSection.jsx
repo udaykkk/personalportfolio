@@ -21,7 +21,7 @@ function HeroSection({ video, className, content, title }) {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-5">
           <div>
             <a
-              href="https://drive.google.com/file/d/1x3fTJiyPIG6kY7XW916tfblMpITyROaR/view?usp=sharing"
+              href="https://drive.google.com/file/d/1kjwvI7K_oD2Xe0Ndd4DLR9XXL-dXfwcg/view?usp=drivesdk"
               target="_blank"
             >
               <button
@@ -51,7 +51,7 @@ function HeroSection({ video, className, content, title }) {
           </div>{" "}
           <div>
             <a
-              href="https://www.linkedin.com/in/anurag-banerjee007/"
+              href="https://www.linkedin.com/in/uday-krishna-66606822a"
               target="_blank"
             >
               <button
