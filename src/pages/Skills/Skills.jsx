@@ -13,7 +13,7 @@ import {
 import { IoLogoFirebase } from "react-icons/io5";
 import { DiMongodb, DiMysql } from "react-icons/di";
 import { SiMysql, SiGooglecloud } from "react-icons/si";
-import { FaC } from "react-icons/fa6";
+import { FaC, FaJava } from "react-icons/fa6";
 import { IoLogoVercel } from "react-icons/io5";
 
 function Skills() {
@@ -77,7 +77,7 @@ function Skills() {
   const skillsDataLang = [
     {
       id: 1,
-      icon: <FaC />,
+      icon: <FaJava />,
       title: "Java",
       description: "Coding Language",
     },

@@ -8,6 +8,11 @@ import Adventurer from "../Adventurer/Adventurer";
 function Landing() {
   return (
     <div className="bg-zinc-900 h-screen w-screen flex justify-center items-center flex-col">
+      <img
+        src="https://i.ibb.co/7xR5vS5z/UDAY-KRISHNA-PORTFOLIO-7-27-2025.gif"
+        alt="Portfolio Banner"
+        className="w-64 md:w-96 rounded-lg mb-8 shadow-lg"
+      />
       <div className="text-white text-5xl mb-16 text-center">
         Pick Your Perspective
       </div>

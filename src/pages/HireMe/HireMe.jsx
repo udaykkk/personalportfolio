@@ -10,11 +10,11 @@ function HireMe() {
       <div className="w-full min-h-screen flex justify-center items-center flex-col gap-4">
         <img
           className="w-48 rounded-full"
-          src="https://ibb.co/84TyBN1H"
+          src="https://i.ibb.co/3yL08Lzr/udphoto.jpg"
           alt="Profile Photo"
         />
         <img
-          src="https://ibb.co/S4NyMkGL"
+          src="https://i.ibb.co/sdHYpRDs/UDAY-KRISHNA-7-27-2025-1.png"
           alt="Logo"
           className="h-10 w-auto"
         />

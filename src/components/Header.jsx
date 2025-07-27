@@ -33,7 +33,7 @@ function Header({ avatar = "https://i.ibb.co/R4T4j58x/image.png" }) {
             className="flex items-center hover:opacity-80 transition-opacity duration-200 flex-shrink-0"
           >
             <img
-              src="https://ibb.co/S4NyMkGL"
+              src="https://i.ibb.co/sdHYpRDs/UDAY-KRISHNA-7-27-2025-1.png"
               alt="Logo"
               className="h-6 sm:h-8 w-auto max-w-none"
             />
