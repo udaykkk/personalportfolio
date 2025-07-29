@@ -18,7 +18,7 @@ function Recruiter() {
       "/Project",
       "/professional",
       "/Hire",
-      "https://github.com/udaykkk/udaykkk",
+      "https://github.com/udaykkk",
     ],
   };
 

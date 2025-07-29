@@ -31,7 +31,7 @@ function Recruiter() {
       "/meme",
       "/Terminal",
       "/professional",
-      "https://github.com/udaykkk/udaykkk",
+      "https://github.com/udaykkk",
     ],
   };
 
@@ -45,7 +45,7 @@ function Recruiter() {
     cardName: ["Music", "Github", "Fun Terminal", "Memes"],
     links: [
       "/music",
-      "https://github.com/udaykkk/udaykkk",
+      "https://github.com/udaykkk",
       "/Terminal",
       "/meme",
     ],
